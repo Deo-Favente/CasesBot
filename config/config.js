@@ -11,8 +11,8 @@ module.exports = {
   },
 
   Client: {
-    TOKEN: "MTA3MzE4NzU0NzE1NDQ5NzU1Ng.G3jpUk.bHIrz8uTr-wJNMeugE1PJ-okwmKXgsp1uXL0o8", // Votre token
-    ID: "1073187547154497556" // Votre ID
+    TOKEN: "MTA3MzE4NzU0NzE1NDQ5NzU1Ng.GakoAN.sBv4QbKnGfqDRB8_79KOAoU-fDamHWwrUsXE8g", // Token du bot
+    ID: "1073187547154497556" // ID du bot
   }
 
 }
