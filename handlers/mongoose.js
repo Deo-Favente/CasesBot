@@ -1,7 +1,8 @@
 const config = require("../config/config.js");
 const superDjs = require("super-djs");
-/*
+
 module.exports = (client) => {
+	/*
 	console.log(superDjs.colourText('[DATABASE] Connecting to MongoDB...', 'yellow'));
 	const mongo = process.env.MONGO || config.Handlers.MONGO;
 	
@@ -10,5 +11,6 @@ module.exports = (client) => {
 	} else {
 		superDjs.connectMongoDB(mongo, true, superDjs.colourText('[DATABASE] Connected to MongoDB!', 'green'));	
 	};
+	*/
 };
-*/
+

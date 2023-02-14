@@ -65,7 +65,7 @@ client.events = new Collection();
 module.exports = client;
 
 ["prefix", "application_commands", "modals", "events", "mongoose"].forEach((file) => {
-  require(`./handlers/${file}`);
+  require(`./handlers/${file}`)(client, config);
 });
 
 // Login to the bot:
