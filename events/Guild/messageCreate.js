@@ -12,7 +12,7 @@ client.on('messageCreate', async (message) => {
   if (message.channel.type !== 0) return;
   if (message.author.bot) return;
 
-  const prefix = await db.get(`guild_prefix_${message.guild.id}`) || config.Prefix || "?";
+  const prefix = await db.get(`guild_prefix_${message.guild.id}`) || config.Prefix || "!";
 
   if (!message.content.startsWith(prefix)) return;
   if (!message.guild) return;
