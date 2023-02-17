@@ -1,8 +1,7 @@
 const { EmbedBuilder } = require("discord.js");
-const client = require("../../index");
+const client = require("../../index.js")
 const config = require("../../config/config.js");
-const { QuickDB } = require("quick.db");
-const db = new QuickDB();
+const db = require("../../handlers/database.js");
 
 module.exports = {
   name: "interactionCreate"

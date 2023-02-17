@@ -26,6 +26,7 @@
     "mongoose": "^6.9.1",
     "node-fetch": "^2.6.1",
     "quick.db": "^9.0.8",
+    "sqlite3": "^5.1.4",
     "super-djs": "^1.7.4"
   }
 }

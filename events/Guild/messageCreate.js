@@ -1,8 +1,7 @@
 const { EmbedBuilder, PermissionsBitField, codeBlock } = require("discord.js");
-const client = require("../../index");
+const client = require("../../index.js");
 const config = require("../../config/config.js");
-const { QuickDB } = require("quick.db");
-const db = new QuickDB();
+const db = require("../../handlers/database.js");
 
 module.exports = {
   name: "messageCreate"
@@ -12,7 +11,7 @@ client.on('messageCreate', async (message) => {
   if (message.channel.type !== 0) return;
   if (message.author.bot) return;
 
-  const prefix = await db.get(`guild_prefix_${message.guild.id}`) || config.Prefix || "!";
+  const prefix = config.Prefix || "!";
 
   if (!message.content.startsWith(prefix)) return;
   if (!message.guild) return;
@@ -22,7 +21,7 @@ client.on('messageCreate', async (message) => {
   const cmd = args.shift().toLowerCase();
   if (cmd.length == 0) return;
 
-  let command = client.prefix_commands.get(cmd);
+  let command = client.prefix_commands.get(cmd) || client.prefix_commands.find(a => a.config.aliases && a.config.aliases.includes(cmd));
 
   if (!command) return;
 

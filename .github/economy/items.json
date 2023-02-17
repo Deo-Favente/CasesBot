@@ -1,0 +1,144 @@
+{
+  "boites": [
+    {
+      "nom": "Boîte du novice",
+      "prix": 100,
+      "items": [
+        {
+          "nom": "Epée en bois",
+          "type": "épée",
+          "puissance": 5
+        },
+        {
+          "nom": "Armure légère",
+          "type": "armure",
+          "puissance": 5
+        },
+        {
+          "nom": "Bouclier en peau de dragon",
+          "type": "bouclier",
+          "puissance": 10
+        }
+      ]
+    },
+    {
+      "nom": "Boîte de l'explorateur",
+      "prix": 250,
+      "items": [
+        {
+          "nom": "Arc en chêne",
+          "type": "arc",
+          "puissance": 8
+        },
+        {
+          "nom": "Flèches en acier",
+          "type": "munition",
+          "puissance": 6
+        },
+        {
+          "nom": "Lanterne",
+          "type": "outil",
+          "puissance": 0
+        }
+      ]
+    },
+    {
+      "nom": "Boîte du chasseur de primes",
+      "prix": 500,
+      "items": [
+        {
+          "nom": "Pistolet à silex",
+          "type": "pistolet",
+          "puissance": 12
+        },
+        {
+          "nom": "Lasso",
+          "type": "outil",
+          "puissance": 0
+        },
+        {
+          "nom": "Grenade",
+          "type": "munition",
+          "puissance": 10
+        }
+      ]
+    },
+    {
+      "nom": "Boîte de la sorcellerie",
+      "prix": 1000,
+      "items": [
+        {
+          "nom": "Baguette de feu",
+          "type": "baguette",
+          "puissance": 15
+        },
+        {
+          "nom": "Grimoire des sorts",
+          "type": "outil",
+          "puissance": 0
+        },
+        {
+          "nom": "Potion de guérison",
+          "type": "potion",
+          "puissance": 0
+        }
+      ]
+    },
+    {
+      "nom": "Boîte de la technologie",
+      "prix": 2000,
+      "items": [
+        {
+          "nom": "Robot de combat",
+          "type": "robot",
+          "puissance": 20
+        },
+        {
+          "nom": "Arme à feu avancée",
+          "type": "arme",
+          "puissance": 18
+        },
+        {
+          "nom": "Exosquelette de combat",
+          "type": "armure",
+          "puissance": 15
+        }
+      ]
+    },
+    {
+      "nom": "Boîte de la divinité",
+      "prix": 5000,
+      "items": [
+        {
+          "nom": "Couronne de cristal",
+          "type": "couronne",
+          "puissance": 25
+        },
+        {
+          "nom": "Sceptre divin",
+          "type": "sceptre",
+          "puissance": 22
+        },
+        {
+          "nom": "Ailes de l'ange",
+          "type": "ailes", 
+          "puissance": 20
+        },
+        {
+          "nom": "Epée divine",
+          "type": "épée",
+          "puissance": 30
+        },
+        {
+          "nom": "Armure sacrée",
+          "type": "armure",
+          "puissance": 25
+        }
+      ]
+    }
+  ]
+}
+
+
+
+

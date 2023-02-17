@@ -64,9 +64,11 @@ client.events = new Collection();
 
 module.exports = client;
 
-["prefix", "application_commands", "modals", "events", "mongoose"].forEach((file) => {
+["prefix", "application_commands", "modals", "events"].forEach((file) => {
   require(`./handlers/${file}`)(client, config);
 });
+require("./handlers/database.js");
+
 
 // Login to the bot:
 client.login(AuthenticationToken)
@@ -81,7 +83,9 @@ client.login(AuthenticationToken)
   });
 
 // Handle errors:
+
 process.on('unhandledRejection', async (err, promise) => {
   console.error(`[ANTI-CRASH] Une erreur s'est produite dans le fonctionnement du bot. Contactez le développeur du bot (Deo_Favente#8275) pour plus d'informations : ${err}`.red);
   console.error(promise);
 });
+
