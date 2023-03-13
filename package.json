@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Deo-Favente/BoxyBot#readme",
   "dependencies": {
-    "better-sqlite3": "^8.1.0",
+    "better-sqlite3": "^8.2.0",
     "colors": "^1.4.0",
     "discord.js": "^14.7.1",
     "mathjs": "^11.5.1",
