@@ -1,5 +1,4 @@
 const { EmbedBuilder } = require("discord.js");
-const { CONSTRAINT } = require("sqlite3");
 
 module.exports = {
   name: "inventory",
@@ -10,15 +9,18 @@ module.exports = {
     DEFAULT_MEMBER_PERMISSIONS: "SendMessages",
   },
   run: async (client, interaction, config, db) => {
-      await db.run(
-          "INSERT INTO users (user_id, money, items) VALUES (?, ?, ?) ON CONFLICT(user_id) DO NOTHING",
-          [interaction.user.id, 0, "Aucun"]);
-      await db.get(
-          "SELECT * FROM users WHERE user_id = ?", [interaction.user.id], function (err, row) {
+    await db.run(
+      "INSERT INTO users (user_id, money, items) VALUES (?, ?, ?) ON CONFLICT(user_id) DO NOTHING",
+      [interaction.user.id, 0, "Aucun"]
+    );
+    await db.get(
+      "SELECT * FROM users WHERE user_id = ?",
+      [interaction.user.id],
+      function (err, row) {
         if (err) {
           console.error(err.message);
         }
-              
+
         return interaction.reply({
           embeds: [
             new EmbedBuilder()
